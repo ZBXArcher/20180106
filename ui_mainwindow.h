@@ -30,6 +30,7 @@ public:
     QPushButton *ok;
     QLineEdit *path;
     QLabel *label;
+    QPushButton *pushButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -50,9 +51,13 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(660, 210, 67, 17));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(650, 320, 99, 27));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
+        QObject::connect(pushButton, SIGNAL(clicked()), MainWindow, SLOT(close()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -63,6 +68,7 @@ public:
         camera->setText(QString());
         ok->setText(QApplication::translate("MainWindow", "ok", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "dir", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "quit", Q_NULLPTR));
     } // retranslateUi
 
 };
