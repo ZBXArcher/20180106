@@ -35,21 +35,21 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1440, 720);
+        MainWindow->resize(776, 480);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         camera = new QLabel(centralWidget);
         camera->setObjectName(QStringLiteral("camera"));
-        camera->setGeometry(QRect(0, 0, 1280, 720));
+        camera->setGeometry(QRect(0, 0, 640, 480));
         ok = new QPushButton(centralWidget);
         ok->setObjectName(QStringLiteral("ok"));
-        ok->setGeometry(QRect(1330, 440, 99, 27));
+        ok->setGeometry(QRect(650, 280, 99, 27));
         path = new QLineEdit(centralWidget);
         path->setObjectName(QStringLiteral("path"));
-        path->setGeometry(QRect(1330, 410, 113, 27));
+        path->setGeometry(QRect(650, 240, 113, 27));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(1330, 380, 67, 17));
+        label->setGeometry(QRect(660, 210, 67, 17));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);

@@ -215,6 +215,7 @@ DIST          = /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/qt_config.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/devices/linux-friendlyelec-nexell32-g++/qmake.conf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/exclusive_builds.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/toolchain.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/default_pre.prf \
@@ -407,6 +408,7 @@ Makefile: carmera2.pro /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/d
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/qt_config.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/devices/linux-friendlyelec-nexell32-g++/qmake.conf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/exclusive_builds.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/toolchain.prf \
 		/usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/default_pre.prf \
@@ -590,6 +592,7 @@ Makefile: carmera2.pro /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/d
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/qt_config.prf:
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/devices/linux-friendlyelec-nexell32-g++/qmake.conf:
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/exclusive_builds.prf:
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/toolchain.prf:
 /usr/local/Trolltech/Qt-5.9.1-nexell32-x86tools/mkspecs/features/default_pre.prf:
@@ -927,6 +930,9 @@ moc_mainwindow.cpp: /opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/in
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qoffscreensurface.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengl.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtCore/qt_windows.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2platform.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/KHR/khrplatform.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengles2ext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglbuffer.h \
@@ -1269,6 +1275,9 @@ main.o: main.cpp mainwindow.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qoffscreensurface.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengl.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtCore/qt_windows.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2platform.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/KHR/khrplatform.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengles2ext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglbuffer.h \
@@ -1592,6 +1601,9 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qoffscreensurface.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengl.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtCore/qt_windows.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/GLES2/gl2platform.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/KHR/khrplatform.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopengles2ext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglext.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qopenglbuffer.h \
@@ -1647,6 +1659,36 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qvalidator.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtGui/qtguiversion.h \
 		ui_mainwindow.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtCore/QVariant \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QAction \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qaction.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qactiongroup.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QApplication \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qapplication.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qdesktopwidget.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QButtonGroup \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qbuttongroup.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QHeaderView \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qheaderview.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractitemview.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractscrollarea.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qframe.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qstyleoption.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractspinbox.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qslider.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractslider.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qstyle.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qtabbar.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qrubberband.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QLabel \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qlabel.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QLineEdit \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qlineedit.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QPushButton \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qpushbutton.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qabstractbutton.h \
+		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QWidget \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/QMessageBox \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qmessagebox.h \
 		/opt/rootfs-s5p4418/usr/local/Trolltech/Qt-5.9.1-nexell32/include/QtWidgets/qdialog.h

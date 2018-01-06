@@ -15,8 +15,8 @@
 
 #define Video_path		"/dev/video0"	//usb摄像头挂载路径
 #define Aim_path		"./test.jpeg"	//目标文件存储路径
-#define Image_high		720             //目标图片的分辨率720*1280
-#define Image_width		1280
+#define Image_high		480             //目标图片的分辨率720*1280
+#define Image_width		640
 #define Video_count     2               //缓冲帧数
 
 typedef struct _buffer										//定义缓冲区结构体
